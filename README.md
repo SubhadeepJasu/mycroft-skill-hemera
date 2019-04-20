@@ -1,19 +1,15 @@
-To submit your skill, replace this file with text from 
-https://rawgit.com/MycroftAI/mycroft-skills/master/meta_editor.html
+# Hemera
+Companion skill for Hemera
 
-
-## YOUR SKILL NAME
-One line description of the skill
-
-## Description 
-A more verbose description, including any extra instructions or
-information that didn't fit in the one line.
+## About
+This skill lets Mycroft send special bus messages to Hemera, a digital personal 
+assistant for elementary OS.
 
 ## Examples 
-* "Hello world"
-* "Greetings planet earth"
-* "Count up"
-* "Count down"
+* "Launch Melody"
+* "Open the app called Firefox"
+* "Open Code"
+* "Open AppCenter"
 
 ## Credits 
-Your name
+Subhadeep Jasu
