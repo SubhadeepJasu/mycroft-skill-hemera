@@ -8,6 +8,7 @@
 # when the skill gets installed later by a user.
 
 from adapt.intent import IntentBuilder
+from mycroft.api import Api
 #from mycroft.skills.core import MycroftSkill, intent_handler
 from mycroft import MycroftSkill, intent_file_handler
 from mycroft.util.log import LOG
@@ -50,7 +51,7 @@ class HemeraSkill(MycroftSkill):
         #    dialogs/en-us/hello.world.dialog
         app_query = message.data ["app_name"];
         LOGGER.debug("Launch App: %s" % app_query)
-        self.emitter.emit(Message("hemera_action",  
+        self.bus.emit(Message("hemera_action",  
                               {'type': 'launch',  
                                'app': app_query}))  
 
