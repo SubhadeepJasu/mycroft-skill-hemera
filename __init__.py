@@ -8,7 +8,8 @@
 # when the skill gets installed later by a user.
 
 from adapt.intent import IntentBuilder
-from mycroft.skills.core import MycroftSkill, intent_handler
+#from mycroft.skills.core import MycroftSkill, intent_handler
+from mycroft import MycroftSkill, intent_file_handler
 from mycroft.util.log import LOG
 from mycroft.util.log import getLogger
 from mycroft.messagebus.message import Message
@@ -41,7 +42,8 @@ class HemeraSkill(MycroftSkill):
     #   'Hello world'
     #   'Howdy you great big world'
     #   'Greetings planet earth'
-    @intent_handler(IntentBuilder("LaunchAppIntent").require("LaunchApp"))
+    #@intent_handler(IntentBuilder("LaunchAppIntent").require("LaunchApp"))
+    @intent_file_handler('LaunchApp.intent')
     def handle_launch_app_intent(self, message):
         # In this case, respond by simply speaking a canned response.
         # Mycroft will randomly speak one of the lines from the file
