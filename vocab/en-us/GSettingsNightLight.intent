@@ -1,6 +1,4 @@
-Turn night light off
-Turn off night light
 Turn {switch_mode} night light
+Turn night light {switch_mode}
 Turn {switch_mode} nightlight
 Turn nightlight {switch_mode}
-Turn night light {switch_mode}

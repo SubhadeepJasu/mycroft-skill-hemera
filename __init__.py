@@ -39,11 +39,7 @@ class HemeraSkill(MycroftSkill):
 
     @intent_file_handler('LaunchApp.intent')
     def handle_launch_app_intent(self, message):
-        app_query = message.data ["app_name"];
-        LOGGER.debug("Launch App: %s" % app_query)
-        self.bus.emit(Message("hemera_action",  
-                              {'type': 'launch',  
-                               'app': app_query}))               
+        app_query = message.data ["app_name"];     
     @intent_file_handler('HemeraName.intent')
     def hemera_name_intent(self, message):
         self.speak_dialog("My name is Hemera. I am a digital personal assistant based on Mycroft")
