@@ -50,6 +50,9 @@ class HemeraSkill(MycroftSkill):
     @intent_file_handler('GSettingsNightLight.intent')
     def handle_nightlight_intent(self, message):
         switch_mode = message.data ["switch_mode"];
+        if switch_mode != "on": 
+            switch_mode = "off"
+        self.speak_dialog("Turning night light " + switch_mode)
         self.bus.emit(Message("hemera_action",  
                               {'type': 'gsettings.nightlight',  
                                'switch_mode': switch_mode}))  
