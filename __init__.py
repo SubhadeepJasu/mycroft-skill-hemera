@@ -43,18 +43,16 @@ class HemeraSkill(MycroftSkill):
         LOGGER.debug("Launch App: %s" % app_query)
         self.bus.emit(Message("hemera_action",  
                               {'type': 'launch',  
-                               'app': app_query}))  
-                               
+                               'app': app_query}))               
     @intent_file_handler('HemeraName.intent')
-    def handle_launch_app_intent(self, message):
+    def hemera_name_intent(self, message):
         self.speak_dialog("My name is Hemera. I am a digital personal assistant based on Mycroft")
-
-    @intent_file_handler('GSettings.NightLight.intent')
-    def handle_launch_app_intent(self, message):
-        switch_mode = message.data ["switch"];
+    @intent_file_handler('GSettingsNightLight.intent')
+    def handle_nightlight_intent(self, message):
+        switch_mode = message.data ["switch_mode"];
         self.bus.emit(Message("hemera_action",  
                               {'type': 'gsettings.nightlight',  
-                               'switch': switch_mode}))  
+                               'switch_mode': switch_mode}))  
 
 
 # The "create_skill()" method is used to create an instance of the skill.
