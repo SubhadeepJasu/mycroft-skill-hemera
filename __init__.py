@@ -53,9 +53,6 @@ class HemeraSkill(MycroftSkill):
         if switch_mode != "on": 
             switch_mode = "off"
         self.speak_dialog("Turning night light " + switch_mode)
-        self.bus.emit(Message("hemera_action",  
-                              {'type': 'gsettings.nightlight',  
-                               'switch_mode': (switch_mode == "on")}))  
 
 
 # The "create_skill()" method is used to create an instance of the skill.
