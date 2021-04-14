@@ -1,9 +1,18 @@
 launch {app_name}
 open {app_name}
-open app {app_name}
 open app called {app_name}
 open app name {app_name}
 open the app {app_name}
 open the app called {app_name}
 open the app named {app_name}
 open the app that goes by the name {app_name}
+launch app called {app_name}
+launch app name {app_name}
+launch the app {app_name}
+launch the app called {app_name}
+launch the app named {app_name}
+launch the app that goes by the name {app_name}
+open an app called {app_name}
+open an app name {app_name}
+launch an app called {app_name}
+launch an app name {app_name}
