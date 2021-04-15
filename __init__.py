@@ -39,13 +39,16 @@ class HemeraSkill(MycroftSkill):
 
     @intent_file_handler('LaunchApp.intent')
     def handle_launch_app_intent(self, message):
-        app_query = message.data ["app_name"];     
+        app_query = message.data ["app_name"]; 
+    @intent_file_handler('SwitchBoard.intent')
+    def handle_switch_board_intent(self, message):
+        plug = message.data ["plug"];   
     @intent_file_handler('HemeraName.intent')
     def hemera_name_intent(self, message):
         self.speak_dialog("My name is Hemera. I am a digital personal assistant based on Mycroft")
     @intent_file_handler('GSettingsNightLight.intent')
     def handle_nightlight_intent(self, message):
-        switch_mode = message.data ["switch_mode"];
+        switch_mode = message.data ["switch_mode"]; 
         if switch_mode != "on": 
             switch_mode = "off"
         self.speak_dialog("Turning night light " + switch_mode)
