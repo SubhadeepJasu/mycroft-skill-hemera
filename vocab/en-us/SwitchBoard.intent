@@ -4,6 +4,9 @@ open the settings for {settings_name}
 can you open the settings for {settings_name}
 open {settings_name} settings
 open the {settings_name} settings
-how (to | can I | do I) change {settings_name} settings in (elementary os | this computer | this laptop )
+how (to | can I | do I) change {settings_name} settings
+how (to | can I | do I) change {settings_name} settings (in | for) ((this | elementary) os | (my | this) computer | (my | this) laptop)
+how (to | can I | do I) change the {settings_name} settings
+how (to | can I | do I) change the {settings_name} settings (in | for) ((this | elementary) os | (my | this) computer | (my | this) laptop)
 where (is | are) the {settings_name} settings
-where (is | are) the {settings_name} settings (in | for) (this os | elementary os | this laptop | this computer)
+where (is | are) the {settings_name} settings (in | for) ((this | elementary) os | (my | this) computer | (my | this) laptop)
