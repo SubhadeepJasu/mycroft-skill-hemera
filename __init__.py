@@ -42,7 +42,7 @@ class HemeraSkill(MycroftSkill):
         app_query = message.data ["app_name"]; 
     @intent_file_handler('SwitchBoard.intent')
     def handle_switch_board_intent(self, message):
-        plug = message.data ["plug"];   
+        plug = message.data ["settings_name"];   
     @intent_file_handler('HemeraName.intent')
     def hemera_name_intent(self, message):
         self.speak_dialog("My name is Hemera. I am a digital personal assistant based on Mycroft")
